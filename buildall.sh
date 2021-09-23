@@ -58,8 +58,8 @@ docker save $MICROSERVICE_NAME:$MICROSERVICE_VERSION | gzip > $ARTIFACTS_PATH/im
 
 echo -e "\e[1;32;40m[FMAAS-BUILD] Upating fmaas chart \e[0m"
 cp -r ./charts/fmaas $ARTIFACTS_PATH/charts/.
-sed -i "s/fmaas_tag/$1/" $ARTIFACTS_PATH/charts/fmaas/values.yaml
-#sed -i "s/cim_tag/$4/" $ARTIFACTS_PATH/charts/fmaas/values.yaml
+sed -i -e "s/fmaas_tag/$1/" $ARTIFACTS_PATH/charts/fmaas/values.yaml
+#sed -i -e "s/cim_tag/$4/" $ARTIFACTS_PATH/charts/fmaas/values.yaml
 md5sum $ARTIFACTS_PATH/images/*
 
 echo -e "\e[1;32;40m[FMAAS-BUILD] Deleting intermediate and microservice images \e[0m"
