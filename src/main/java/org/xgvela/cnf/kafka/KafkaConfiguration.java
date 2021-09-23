@@ -54,7 +54,7 @@ public class KafkaConfiguration {
 
 	public static final String bootstrapServers = System.getenv(Constants.KAFKA_SVC_FQDN);
 
-	private static final String groupId = "faultservice";
+	private static final String groupId = "fmaas";
 
 	@Autowired
 	RebalanceListener consumerRebalanceListener;

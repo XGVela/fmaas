@@ -28,11 +28,11 @@ import org.xgvela.logging.GlobalExceptionHandler;
 @EnableScheduling
 @ComponentScan(basePackages = { "org.xgvela" })
 @PropertySource("classpath:application.properties")
-public class FaultServiceApplication {
+public class FmaasApplication {
 
 	public static void main(String[] args) {
 		Thread.setDefaultUncaughtExceptionHandler(new GlobalExceptionHandler());
-		SpringApplication.run(FaultServiceApplication.class, args);
+		SpringApplication.run(FmaasApplication.class, args);
 	}
 
 	@Bean

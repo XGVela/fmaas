@@ -75,7 +75,7 @@ public class RegisterTask {
 
 	private static void setRegisterRequestEntity() {
 		ObjectMapper objectMapper = JsonUtil.getMapper();
-		RegisterRequest obj = new org.xgvela.model.RegisterRequest(NatsAppender.FaultService, NatsAppender.K8sContainer);
+		RegisterRequest obj = new org.xgvela.model.RegisterRequest(NatsAppender.fmaas, NatsAppender.K8sContainer);
 		try {
 			entity = new HttpEntity<String>(objectMapper.writeValueAsString(obj));
 		} catch (JsonProcessingException e) {

@@ -949,7 +949,7 @@ public class JsonUtil {
 		ObjectNode jsonBody = mapper.createObjectNode();
 		jsonBody.putArray("localEventName").add("NFServiceInstanceDeleted");
 		// jsonBody.putArray("nfNamingCode").add("xgvela");
-		// jsonBody.putArray("nfcNamingCode").add("topo-engine");
+		// jsonBody.putArray("nfcNamingCode").add("tmaas");
 		String jsonString = Constants.EMPTY_STRING;
 		try {
 			jsonString = objectMapper.writeValueAsString(jsonBody);

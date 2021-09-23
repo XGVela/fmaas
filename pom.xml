@@ -9,11 +9,11 @@
 		<version>2.3.3.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>org.xgvela.cnf</groupId>
-	<artifactId>FaultService</artifactId>
+	<groupId>org.xgvela</groupId>
+	<artifactId>fmaas</artifactId>
 	<version>v0.1</version>
-	<name>FaultService</name>
-	<description>Fault Service for CNF</description>
+	<name>FMaaS</name>
+	<description>Fault Management as a Service</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
